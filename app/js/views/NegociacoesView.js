@@ -1,6 +1,6 @@
 class NegociacoesView extends View {
     update(model) {
-        this._elemento.innerHTML = this.template(model);
+        super.update(model);
     }
     template(model) {
         return `

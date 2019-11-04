@@ -1,8 +1,8 @@
 class MensagemView extends View<string>{
 
-    update(model: string) {
+    update(model: string): void {
 
-        this._elemento.innerHTML = this.template(model);
+        super.update(model);
     }
 
     template(model: string): string {
